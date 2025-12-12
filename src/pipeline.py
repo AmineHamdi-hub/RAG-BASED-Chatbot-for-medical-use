@@ -1,6 +1,6 @@
 from scraper import scrape_multiple_pages
-from src.rag import ingest_documents, store_embeddings, build_graph, load_docs_from_folder, answer_question
-from src.llm_wrapper import GroqLLM
+from rag import ingest_documents, store_embeddings, load_docs_from_folder
+from llm_wrapper import GroqLLM
 import re
 
 llm = GroqLLM()
@@ -31,7 +31,6 @@ def process_docs():
     docs = load_docs_from_folder()
     chunks = ingest_documents(docs)
     store_embeddings(chunks)
-    build_graph(chunks)
     print(f"Processed {len(docs)} docs into {len(chunks)} chunks.")
 
 
