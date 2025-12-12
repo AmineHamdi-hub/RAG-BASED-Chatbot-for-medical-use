@@ -1,0 +1,9 @@
+groq
+python-dotenv
+requests
+beautifulsoup4
+sentence-transformers
+psycopg2-binary
+pgvector
+neo4j
+streamlit
