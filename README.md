@@ -91,4 +91,4 @@ Contributing
 - Fixes, docs, and improvements welcome. Follow usual Python best practices and linting.
 
 License
-- MIT — see [LICENSE](LICENSE) for details.
+- MIT — see [LICENSE](./LICENSE) for details.
